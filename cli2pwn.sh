@@ -38,4 +38,4 @@ printf '[*] Tip: Type /web_assassin or /binary_ninja in the chat\n'
 
 agy
 
-printf '[+] CLI2PWN is ready! Run ./cli2pwn.sh anytime. Thanks you!\n'
+printf '[+] CLI2PWN is ready! Run ./cli2pwn.sh anytime!\n'
