@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="./src/photos/banner.png" alt="CLI2PWN - Multi-Agent Offensive Framework" width="100%">
+<img src="./src/photos/banner.png" alt="cli2pwn - Multi-Agent Offensive Framework" width="100%">
 <br>
 
-<a href="https://github.com/0pwn/CLI2PWN/stargazers"><img src="https://img.shields.io/github/stars/0pwn/CLI2PWN?style=for-the-badge&color=007AFF" alt="Stars"></a>
-<a href="https://github.com/0pwn/CLI2PWN/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-007AFF?style=for-the-badge" alt="License"></a>
+<a href="https://github.com/uziii2208/cli2pwn/stargazers"><img src="https://img.shields.io/github/stars/uziii2208/cli2pwn?style=for-the-badge&color=007AFF" alt="Stars"></a>
+<a href="https://github.com/uziii2208/cli2pwn/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-007AFF?style=for-the-badge" alt="License"></a>
 <a href="#the-30-agents"><img src="https://img.shields.io/badge/agents-30%2B-007AFF?style=for-the-badge" alt="30+ Agents"></a>
 <a href="https://github.com/antigravity-cli"><img src="https://img.shields.io/badge/Antigravity-CLI_Native-007AFF?style=for-the-badge" alt="Antigravity Native"></a>
 <a href="https://attack.mitre.org"><img src="https://img.shields.io/badge/MITRE_ATT%26CK-Mapped-red?style=for-the-badge" alt="ATT&CK Mapped"></a>
-<a href="https://github.com/0pwn/CLI2PWN"><img src="https://img.shields.io/badge/Cross_Platform-Win%2FLinux-orange?style=for-the-badge" alt="Cross Platform"></a>
+<a href="https://github.com/uziii2208/cli2pwn"><img src="https://img.shields.io/badge/Cross_Platform-Win%2FLinux-orange?style=for-the-badge" alt="Cross Platform"></a>
 
 <br><br>
 
