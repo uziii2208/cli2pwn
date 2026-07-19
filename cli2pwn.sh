@@ -26,16 +26,44 @@ if ! command -v agy >/dev/null 2>&1; then
     exit 1
 fi
 
-if agy --add-dir "$SCRIPT_DIR" --permanent >/dev/null 2>&1; then
-    printf '[+] Workspace registered permanently\n'
-else
-    agy --add-dir "$SCRIPT_DIR" >/dev/null 2>&1 || true
-    printf '[i] Workspace added for current session\n'
-fi
+register_workspace() {
+    local dir="$1"
+
+    if ! agy --help 2>/dev/null | grep -q -- '--add-dir'; then
+        printf '[i] Current agy version does not support --add-dir; skipping workspace registration.\n'
+        return 0
+    fi
+
+    if command -v timeout >/dev/null 2>&1; then
+        if timeout 10s agy --add-dir "$dir" --permanent >/dev/null 2>&1; then
+            printf '[+] Workspace registered permanently\n'
+            return 0
+        fi
+
+        if timeout 10s agy --add-dir "$dir" >/dev/null 2>&1; then
+            printf '[i] Workspace added for current session\n'
+            return 0
+        fi
+    else
+        if agy --add-dir "$dir" --permanent >/dev/null 2>&1; then
+            printf '[+] Workspace registered permanently\n'
+            return 0
+        fi
+
+        if agy --add-dir "$dir" >/dev/null 2>&1; then
+            printf '[i] Workspace added for current session\n'
+            return 0
+        fi
+    fi
+
+    printf '[i] Workspace registration skipped because agy did not respond in time.\n'
+}
+
+register_workspace "$SCRIPT_DIR"
 
 printf '[+] Launching Antigravity CLI...\n'
 printf '[*] Tip: Type /web_assassin or /binary_ninja in the chat\n'
 
-agy
+exec agy
 
 printf '[+] CLI2PWN is ready! Run ./cli2pwn.sh anytime!\n'
