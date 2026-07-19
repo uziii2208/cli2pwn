@@ -1,0 +1,14 @@
+{
+  "name": "CLI2PWN Hooks",
+  "version": "1.0.0",
+  "description": "Advanced execution hooks for intercepting, modifying, and guarding agent actions. Features robust OPSEC enforcement and automated TTP injection.",
+  "author": "0pwn",
+  "files": [
+    "scope_check.py",
+    "cmd_log.sh",
+    "findings_sync.py",
+    "ttp_suggester.py",
+    "opsec_guard.py",
+    "session_prime.sh"
+  ]
+}

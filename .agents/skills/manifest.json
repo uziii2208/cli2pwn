@@ -1,0 +1,16 @@
+{
+  "name": "CLI2PWN Skills",
+  "version": "1.0.0",
+  "description": "Modular capability extensions for CLI2PWN agents, bringing deep technical expertise across multiple exploitation domains.",
+  "author": "0pwn",
+  "files": [
+    "modern_recon/SKILL.md",
+    "living-off-the-land/SKILL.md",
+    "cloud_shadow_admin/SKILL.md",
+    "container_escape/SKILL.md",
+    "byovd_exploitation/SKILL.md",
+    "ai_red_teaming/SKILL.md",
+    "evasion_techniques/SKILL.md",
+    "report_automation/SKILL.md"
+  ]
+}

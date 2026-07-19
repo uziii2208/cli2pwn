@@ -1,0 +1,15 @@
+{
+  "name": "CLI2PWN Commands",
+  "version": "1.0.0",
+  "description": "Slash commands integrating CLI2PWN red teaming workflows directly into the Antigravity IDE conversation.",
+  "author": "0pwn",
+  "files": [
+    "engage.md",
+    "attack.md",
+    "swarm.md",
+    "chaos.md",
+    "pwned.md",
+    "hunt.md",
+    "report.md"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "cli2pwn",
+  "displayName": "CLI2PWN - Elite Antigravity Offensive Workspace",
+  "author": "0pwn",
+  "version": "1.0.0",
+  "description": "Persistent elite multi-agent offensive workspace optimized for Antigravity IDE.",
+  "type": "workspace-plugin",
+  "entrypoint": "cli2pwn.ps1",
+  "agentRoot": ".agents/agents",
+  "pluginRoot": ".agents",
+  "paths": {
+    "hooks": ".agents/hooks",
+    "skills": ".agents/skills",
+    "commands": ".agents/commands"
+  },
+  "capabilities": [
+    "persistent-agents",
+    "auto-orchestration",
+    "creative-ttp",
+    "evidence-chain",
+    "opsec-aware"
+  ],
+  "paths": {
+    "hooks": ".agents/hooks",
+    "skills": ".agents/skills",
+    "commands": ".agents/commands"
+  },
+  "commands": [
+    {
+      "name": "launch",
+      "script": "cli2pwn.ps1",
+      "description": "Start the full elite workspace with persistent agents"
+    },
+    {
+      "name": "engage",
+      "description": "Intelligent engagement with dynamic agent routing"
+    },
+    {
+      "name": "swarm",
+      "description": "Activate full agent swarm with creative attack paths"
+    },
+    {
+      "name": "chaos",
+      "description": "Unrestricted creative / out-of-the-box mode"
+    }
+  ]
+}
