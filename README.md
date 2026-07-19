@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./src/photos/banner.png" alt="CLI2PWN — Multi-Agent Offensive Framework" width="100%">
+<img src="./src/photos/banner.png" alt="CLI2PWN - Multi-Agent Offensive Framework" width="100%">
 <br>
 
 <a href="https://github.com/0pwn/CLI2PWN/stargazers"><img src="https://img.shields.io/github/stars/0pwn/CLI2PWN?style=for-the-badge&color=007AFF" alt="Stars"></a>
@@ -19,7 +19,7 @@
 
 ---
 
-> **⚠️ FOR AUTHORIZED SECURITY TESTING ONLY.** All agents operate within defined research parameters. Security research requires explicit authorization — ensure all targets are explicitly permitted before execution.
+> **⚠️ FOR AUTHORIZED SECURITY TESTING ONLY.** All agents operate within defined research parameters. Security research requires explicit authorization - ensure all targets are explicitly permitted before execution.
 
 ## [+] Overview
 
