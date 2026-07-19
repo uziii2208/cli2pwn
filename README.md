@@ -73,18 +73,33 @@ cli2pwn/
    ```
 
    ```bash
-   # Linux / Kali / Ubuntu
-   chmod +x ./cli2pwn.sh
-   ./cli2pwn.sh
+   $ chmod +x ./cli2pwn.sh
+   $ ./cli2pwn.sh
    ```
 
 ## [#] Usage
 
 Once loaded into the Antigravity CLI, you can orchestrate your agents using intuitive slash commands or direct subagent invocation.
 
+### Core Commands
+
+| Command | Description |
+|---------|-------------|
+| `/command <cmd>` | Execute system commands and return results |
+| `/launch` | Start the full elite workspace with persistent agents |
+| `/engage` | Intelligent engagement with dynamic agent routing |
+| `/swarm` | Activate full agent swarm with creative attack paths |
+| `/chaos` | Unrestricted creative / out-of-the-box mode |
+
 ### Agent Invocation Examples
 
 ```text
+/command whoami
+/launch
+/engage
+/swarm
+/chaos
+
 /modern_recon target="corp.example.com" mode="stealth"
 /container_escape technique="cgroup_release_agent"
 /byovd_exploitation driver="ntoskrnl.exe" offset="0x1234"
@@ -93,6 +108,16 @@ Once loaded into the Antigravity CLI, you can orchestrate your agents using intu
 
 ### The Synergy Model
 You can ask one agent to collaborate with another. For example, instruct the `/modern_recon` agent to pass its findings to `/web_assassin` for immediate vulnerability analysis, maintaining a seamless kill chain.
+
+### Linux / Kali Setup (Important)
+
+After cloning the repository on Linux/Kali, make the command scripts executable:
+
+```bash
+chmod +x .agents/commands/*.sh
+```
+
+This ensures all custom slash commands (`/command`, `/launch`, `/engage`, `/swarm`, `/chaos`) work properly on Unix-based systems.
 
 ## [*] Legal & Ethical Boundaries
 

@@ -23,23 +23,27 @@
   "commands": [
     {
       "name": "command",
+      "script": ".agents/commands/command.sh",
       "description": "Execute system commands and return results"
     },
     {
       "name": "launch",
-      "script": "cli2pwn.ps1",
+      "script": ".agents/commands/launch.sh",
       "description": "Start the full elite workspace with persistent agents"
     },
     {
       "name": "engage",
+      "script": ".agents/commands/engage.sh",
       "description": "Intelligent engagement with dynamic agent routing"
     },
     {
       "name": "swarm",
+      "script": ".agents/commands/swarm.sh",
       "description": "Activate full agent swarm with creative attack paths"
     },
     {
       "name": "chaos",
+      "script": ".agents/commands/chaos.sh",
       "description": "Unrestricted creative / out-of-the-box mode"
     }
   ]
