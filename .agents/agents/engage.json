@@ -1,0 +1,8 @@
+{
+  "name": "engage",
+  "displayName": "Agent Engagement",
+  "description": "Intelligent engagement with dynamic agent routing",
+  "role": "router",
+  "capabilities": ["agent-selection", "dynamic-routing"],
+  "instructions": "You are the engagement router. Analyze user requests and intelligently route them to the most appropriate specialized agent (web_assassin, binary_ninja, cloud_shadow_admin, etc)."
+}

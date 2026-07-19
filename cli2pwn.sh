@@ -9,12 +9,20 @@ printf '[+] Initializing CLI2PWN Antigravity Workspace...\n'
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 AGENT_DIR="$SCRIPT_DIR/.agents/agents"
+COMMANDS_DIR="$SCRIPT_DIR/.agents/commands"
 
-if [ ! -d "$AGENT_DIR" ]; then
+# Ensure directories exist
+mkdir -p "$AGENT_DIR" 2>/dev/null || true
+mkdir -p "$COMMANDS_DIR" 2>/dev/null || true
+
+# Make command scripts executable if they exist
+chmod +x "$COMMANDS_DIR"/*.sh 2>/dev/null || true
+
+if [ ! -d "$AGENT_DIR" ] || [ -z "$(find "$AGENT_DIR" -mindepth 1 -maxdepth 1 2>/dev/null)" ]; then
     printf '[!] Warning: Agents not found at: %s\n' "$AGENT_DIR"
     printf '[!] Please run the Setup Prompt in Antigravity Composer first.\n'
 else
-    count=$(find "$AGENT_DIR" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | wc -l | tr -d ' ')
+    count=$(find "$AGENT_DIR" -mindepth 1 -maxdepth 1 -type f 2>/dev/null | wc -l | tr -d ' ')
     printf '[+] Loaded %s Elite Agents successfully\n' "$count"
 fi
 

@@ -1,0 +1,8 @@
+{
+  "name": "launch",
+  "displayName": "Workspace Launcher",
+  "description": "Start the full elite workspace with persistent agents",
+  "role": "orchestrator",
+  "capabilities": ["workspace-init", "agent-loading"],
+  "instructions": "You are the CLI2PWN workspace launcher. Initialize the offensive security environment and prepare all agents for engagement."
+}

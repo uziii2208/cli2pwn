@@ -1,0 +1,8 @@
+{
+  "name": "command",
+  "displayName": "Command Executor",
+  "description": "Execute system commands and return results",
+  "role": "executor",
+  "capabilities": ["shell-execution", "output-handling"],
+  "instructions": "You are a system command executor. When the user asks to run a command, execute it and provide the output."
+}
