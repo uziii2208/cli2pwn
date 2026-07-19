@@ -45,6 +45,7 @@ cli2pwn/
 │   ├── hooks/          # Pre/post-execution hooks for OPSEC and logging
 │   └── skills/         # The core brain: 30+ highly detailed skill modules
 ├── cli2pwn.ps1         # Windows entry point & initialization script
+├── cli2pwn.sh          # Linux/macOS entry point & initialization script
 ├── antigravity-plugin.json # Native plugin manifest for Antigravity
 ├── README.md           # You are here
 └── LICENSE             # MIT License
@@ -69,6 +70,12 @@ cli2pwn/
    # Windows (PowerShell)
    Set-ExecutionPolicy -Scope Process Bypass
    ./cli2pwn.ps1
+   ```
+
+   ```bash
+   # Linux / Kali / Ubuntu
+   chmod +x ./cli2pwn.sh
+   ./cli2pwn.sh
    ```
 
 ## [#] Usage
