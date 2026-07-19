@@ -54,7 +54,7 @@ cli2pwn/
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/0pwn/cli2pwn.git
+   git clone https://github.com/uziii2208/cli2pwn.git
    cd cli2pwn
    ```
 
