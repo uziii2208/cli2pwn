@@ -20,12 +20,11 @@
     "evidence-chain",
     "opsec-aware"
   ],
-  "paths": {
-    "hooks": ".agents/hooks",
-    "skills": ".agents/skills",
-    "commands": ".agents/commands"
-  },
   "commands": [
+    {
+      "name": "command",
+      "description": "Execute system commands and return results"
+    },
     {
       "name": "launch",
       "script": "cli2pwn.ps1",
